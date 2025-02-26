@@ -11,50 +11,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <style>
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
 
 
-        .swiper {
-            width: 100%;
-            height: 300px;
-            margin-left: auto;
-            margin-right: auto;
-        }
 
-        .swiper-slide {
-            background-size: cover;
-            background-position: center;
-        }
 
-        .propductSwiper {
-            height: 80%;
-            width: 100%;
-        }
 
-        .thumbSwiper {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-        }
 
         .thumbSwiper .swiper-slide {
             width: 25%;
@@ -66,13 +27,22 @@
             opacity: 1;
         }
 
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .thumbSwiper .swiper-slide {
+            position: relative;
+            height: 40px;
+            margin: 8px auto;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
         }
-    </style>
+        
+        .thumbSwiper .swiper-slide img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        </style>
 </head>
 
 <body>
@@ -87,34 +57,54 @@
                         <div class="swiper propductSwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                    <div class="swiper-zoom-container">
+                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                    </div>
                                 </div>
                             </div>
                         </div>

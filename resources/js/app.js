@@ -1,11 +1,12 @@
 import './bootstrap';
 import Swiper from 'swiper';
-import { Navigation, Thumbs } from 'swiper/modules';
-import 'swiper/swiper-bundle.css';
+import { Autoplay, Navigation, Thumbs, Zoom } from 'swiper/modules';
+import 'swiper/swiper-bundle.css'
 
 
 var thumbSwiper = new Swiper(".thumbSwiper", {
     modules: [Navigation],
+    loop: true,
     spaceBetween: 8,
     slidesPerView: 5,
     freeMode: true,
@@ -17,7 +18,13 @@ var thumbSwiper = new Swiper(".thumbSwiper", {
     watchSlidesProgress: true,
 });
 var propductSwiper = new Swiper(".propductSwiper", {
-    modules: [Thumbs],
+    modules: [Thumbs, Autoplay, Zoom],
+    loop: true,
+    zoom: true,
+    autoplay: {
+        delay: 15000,
+        pauseOnMouseEnter: true
+    },
     spaceBetween: 8,
 
     thumbs: {
